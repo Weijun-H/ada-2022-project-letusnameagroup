@@ -59,24 +59,24 @@ Although the initial rating data was saved in text format, they were too big to 
 
 ## Proposed timeline
 
-15.11.22 Slice and preprocess the dataset
-18.11.22 Explore the factors associated with the beer ratings.
-18.11.22 **Milestone 2** deadline
-22.11.22 Pause project work.
-02.12.22 **Homework 2** deadline
-08.12.22 Begin developing a rough draft of the datastory.
-09.12.22 Finish Statistical tests
-11.12.22 Complete all code implementations and visualisations relevant to analysis.
-14.12.22 Complete datastory.
-21.12.22 Complete the website
-23.12.22 **Milestone 3** deadline
+- 15.11.22 Slice and preprocess the dataset
+- 18.11.22 Explore the factors associated with the beer ratings.
+- 18.11.22 **Milestone 2** deadline
+- 22.11.22 Pause project work.
+- 02.12.22 **Homework 2** deadline
+- 08.12.22 Begin developing a rough draft of the datastory.
+- 09.12.22 Finish Statistical tests
+- 11.12.22 Complete all code implementations and visualisations relevant to analysis.
+- 14.12.22 Complete datastory.
+- 21.12.22 Complete the website
+- 23.12.22 **Milestone 3** deadline
 
 
 ## Organization within the team
-datastory: member 1 & 2
-website: member 3 & 4
-Code implementation: Work together
-Analysis: Group discussion
+- datastory: member 1 & 2
+- website: member 3 & 4
+- Code implementation: Work together
+- Analysis: Group discussion
     
 
     
