@@ -89,10 +89,10 @@ Although the initial rating data was saved in text format, they were too big to 
 
 
 ## Organization within the team
-datastory: member 1 & 2
-website: member 3 & 4
-Code implementation: Work together
-Analysis: Group discussion
+- datastory: member 1 & 2
+- website: member 3 & 4
+- Code implementation: Work together
+- Analysis: Group discussion
     
 
 ​    
