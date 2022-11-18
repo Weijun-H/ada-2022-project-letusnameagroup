@@ -43,13 +43,13 @@ Although the initial rating data was saved in text format, they were too big to 
 
 - We plot an **interactive** graph that shows the top 10 most popular beer styles in a specific region in a particular year. We will use these graphs and relevant dataframes to do future analysis. *(These may also help us with the data story and the website we will create then)*
 
-  <img src="/Users/sunyukang/Documents/Study/EPFL/Ada/ada-2022-project-letusnameagroup/Image/1.jpg" alt="1" style="zoom:50%;" />
+  <img src="./Image/1.jpg" alt="1" style="zoom:50%;" />
 
-  <img src="/Users/sunyukang/Documents/Study/EPFL/Ada/ada-2022-project-letusnameagroup/Image/2.jpg" alt="2" style="zoom:50%;" />
+  <img src="./Image/2.jpg" alt="2" style="zoom:50%;" />
 
-  <img src="/Users/sunyukang/Documents/Study/EPFL/Ada/ada-2022-project-letusnameagroup/Image/3.jpg" alt="3" style="zoom:50%;" />
+  <img src="./Image/3.jpg" alt="3" style="zoom:50%;" />
 
-  <img src="/Users/sunyukang/Documents/Study/EPFL/Ada/ada-2022-project-letusnameagroup/Image/4.jpg" alt="4" style="zoom:50%;" />
+  <img src="./Image/4.jpg" alt="4" style="zoom:50%;" />
 
     
 
