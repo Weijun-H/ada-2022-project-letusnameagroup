@@ -27,7 +27,6 @@ Due to the increasing number of negative reviews and water army, the consumer wo
 ## Method
 ### Data preprocessing
 **Data slice**
-
 Although the initial rating data was saved in text format, they were too big to parse and analyze. Before the analysis, we used Python bash to slice and prepare the data for CSV loading by pandas.
 
 **Clean Data**
@@ -39,9 +38,25 @@ Although the initial rating data was saved in text format, they were too big to 
 ### Analytic methods
 **Visualization**
 - We first plot some figures about the rating distribution of the two websites, and notice that the distribution are similar, therefore we may do similar analysis on the two datasets.
+
 - We plot the distribution about abv values, and figured out that the most popular ones range from 4 to 10 Vol.
+
 - We plot an **interactive** graph that shows the top 10 most popular beer styles in a specific region in a particular year. We will use these graphs and relevant dataframes to do future analysis. *(These may also help us with the data story and the website we will create then)*
+
+  <img src="/Users/sunyukang/Documents/Study/EPFL/Ada/ada-2022-project-letusnameagroup/Image/1.jpg" alt="1" style="zoom:50%;" />
+
+  <img src="/Users/sunyukang/Documents/Study/EPFL/Ada/ada-2022-project-letusnameagroup/Image/2.jpg" alt="2" style="zoom:50%;" />
+
+  <img src="/Users/sunyukang/Documents/Study/EPFL/Ada/ada-2022-project-letusnameagroup/Image/3.jpg" alt="3" style="zoom:50%;" />
+
+  <img src="/Users/sunyukang/Documents/Study/EPFL/Ada/ada-2022-project-letusnameagroup/Image/4.jpg" alt="4" style="zoom:50%;" />
+
+    
+
 - We plot the change of the number of ratings of one particular beer style *(interactive)* over the years which helps to show whether people's preferences are shifted. We will also conduct hypothesis test on the conclusion.
+
+  
+
 - We plot the number of reviews as well as the overall score over the time. These help us to know how time affects the overall score.
 
 **Statistical tests** (Finish in MileStone3)
@@ -60,26 +75,25 @@ Although the initial rating data was saved in text format, they were too big to 
 
 ## Proposed timeline
 
-- 15.11.22 Slice and preprocess the dataset
-- 18.11.22 Explore the factors associated with the beer ratings.
-- 18.11.22 **Milestone 2** deadline
-- 22.11.22 Pause project work.
-- 02.12.22 **Homework 2** deadline
-- 08.12.22 Begin developing a rough draft of the datastory.
-- 09.12.22 Finish Statistical tests
-- 11.12.22 Complete all code implementations and visualisations relevant to analysis.
-- 14.12.22 Complete datastory.
-- 21.12.22 Complete the website
-- 23.12.22 **Milestone 3** deadline
+15.11.22 Slice and preprocess the dataset
+18.11.22 Explore the factors associated with the beer ratings.
+18.11.22 **Milestone 2** deadline
+22.11.22 Pause project work.
+02.12.22 **Homework 2** deadline
+08.12.22 Begin developing a rough draft of the datastory.
+09.12.22 Finish Statistical tests
+11.12.22 Complete all code implementations and visualisations relevant to analysis.
+14.12.22 Complete datastory.
+21.12.22 Complete the website
+23.12.22 **Milestone 3** deadline
 
 
 ## Organization within the team
-- datastory: member 1 & 2
-- website: member 3 & 4
-- Code implementation: Work together
-- Analysis: Group discussion
+datastory: member 1 & 2
+website: member 3 & 4
+Code implementation: Work together
+Analysis: Group discussion
     
 
-    
-
+​    
 
