@@ -27,6 +27,7 @@ Due to the increasing number of negative reviews and water army, the consumer wo
 ## Method
 ### Data preprocessing
 **Data slice**
+
 Although the initial rating data was saved in text format, they were too big to parse and analyze. Before the analysis, we used Python bash to slice and prepare the data for CSV loading by pandas.
 
 **Clean Data**
