@@ -36,7 +36,7 @@ Although the initial rating data was saved in text format, they were too big to 
 - We will also delete the data without review text.
 
 ### Analytic methods
-**Visualization**
+**Visualization**: P.S.We put some snapshots of the interactive widgets here
 - We first plot some figures about the rating distribution of the two websites, and notice that the distribution are similar, therefore we may do similar analysis on the two datasets.
 
 - We plot the distribution about abv values, and figured out that the most popular ones range from 4 to 10 Vol.
@@ -47,14 +47,14 @@ Although the initial rating data was saved in text format, they were too big to 
 
   <img src="./Image/2.jpg" alt="2" style="zoom:50%;" />
 
-  <img src="./Image/3.jpg" alt="3" style="zoom:50%;" />
-
-  <img src="./Image/4.jpg" alt="4" style="zoom:50%;" />
 
     
 
 - We plot the change of the number of ratings of one particular beer style *(interactive)* over the years which helps to show whether people's preferences are shifted. We will also conduct hypothesis test on the conclusion.
 
+  <img src="./Image/3.jpg" alt="3" style="zoom:50%;" />
+
+  <img src="./Image/4.jpg" alt="4" style="zoom:50%;" />
   
 
 - We plot the number of reviews as well as the overall score over the time. These help us to know how time affects the overall score.
