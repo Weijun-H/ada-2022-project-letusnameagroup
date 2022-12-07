@@ -1,14 +1,8 @@
 from IPython.display import HTML, Javascript, display
-from sklearn import preprocessing
 from ipywidgets import interact
 import statsmodels.formula.api as smf
 import statsmodels.api as sm
 from statsmodels.stats import diagnostic
-from sklearn.metrics import mean_squared_error, auc, roc_curve
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import cross_val_predict
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.linear_model import LinearRegression, LogisticRegression, Ridge
 from scipy import stats
 import streamlit as st
 import numpy as np
