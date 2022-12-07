@@ -1,0 +1,9 @@
+matplotlib
+streamlit
+numpy
+pandas
+seaborn
+IPython
+ipywidgets
+sklearn
+statsmodels
