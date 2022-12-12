@@ -41,6 +41,12 @@ st.set_page_config(layout="wide")
 ###############################
 ### ANALYSIS METHODS (PLOT) ###
 ###############################
+def plot_html(filename):
+  with open(filename, 'r') as f:
+      html_data = f.read()
+  st.components.v1.html(html_data,height=650)
+
+
 
 
 ###################
@@ -73,6 +79,7 @@ with row2:
 _, row3, _ = st.columns((.1, 3.2, .1))
 with row3:
   st.subheader("Which aspect of the beer influences the overall rating of the beer the most?")
+  plot_html('./figure/hist.html')
 
 
 _, row4, _ = st.columns((.1, 3.2, .1))
@@ -83,3 +90,5 @@ with row2:
 _, row5, _ = st.columns((.1, 3.2, .1))
 with row5:
   st.subheader("What is the shift in people's preference for beer style over some time? How do we use the trend to give some brewing advice to Brewery?")
+
+
