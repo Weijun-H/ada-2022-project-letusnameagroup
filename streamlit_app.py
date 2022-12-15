@@ -19,6 +19,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import datetime
 
+placehold = ""
+with open('placehold.txt') as f:
+    placehold = ('').join(f.readlines())
+
 sns.set_style("darkgrid")
 
 
@@ -44,9 +48,7 @@ st.set_page_config(layout="wide")
 def plot_html(filename):
   with open(filename, 'r') as f:
       html_data = f.read()
-  st.components.v1.html(html_data,height=650)
-
-
+  st.components.v1.html(html_data,height=450, scrolling = True)
 
 
 ###################
@@ -57,38 +59,36 @@ image = Image.open('beer.jpg')
 
 st.image(image)
 
-
 ####################
 ### INTRODUCTION ###
 ####################
 
-row0_spacer1, row0_1, row0_spacer2, row0_2, row0_spacer3 = st.columns(
-    (.1, 2.3, .1, 1.3, .1))
+row0_spacer1, row0_1, row0_spacer2, row0_2, row0_spacer3 = st.columns((.1, 2.3, .1, 1.3, .1))
 
 with row0_1:
-    st.title("Let us make the most popular beer🍺!")
+  st.title("Let us make the most popular beer🍺!")
 
 _, row2, _ = st.columns((.1, 3.2, .1))
 with row2:
-    st.subheader("Introduction")
-    st.markdown("Over the 20 years, beer rating websites have attracted plenty of users to give ratings and reviews about beers. As time passes, people may change their preference for beer. We intend to use the review and scores of different beers on BeerAdvocate and RateBeer websites. To determine which factors have the most significant influence on beer's overall rating. And give production or sales suggestions to the breweries in the different regions. Due to the increasing number of negative reviews and water army, the consumer would easily be affected by these grading. We would like to know if this phenomenon also happened in our dataset. Because negative reviews are generally random text, we intend to train the model using reviews as input and ratings as labels. Thus detecting malicious reviews and eliminating this affection.")
-    st.markdown(
-        "You can find the source code in the [Let us make the most popular beer!](https://github.com/epfl-ada/ada-2022-project-letusnameagroup)")
+  st.subheader("Introduction")
+  st.markdown("Over the 20 years, beer rating websites have attracted plenty of users to give ratings and reviews about beers. As time passes, people may change their preference for beer. We intend to use the review and scores of different beers on BeerAdvocate and RateBeer websites. To determine which factors have the most significant influence on beer's overall rating. And give production or sales suggestions to the breweries in the different regions. Due to the increasing number of negative reviews and water army, the consumer would easily be affected by these grading. We would like to know if this phenomenon also happened in our dataset. Because negative reviews are generally random text, we intend to train the model using reviews as input and ratings as labels. Thus detecting malicious reviews and eliminating this affection.")
+  st.markdown(
+      "You can find the source code in the [Let us make the most popular beer!](https://github.com/epfl-ada/ada-2022-project-letusnameagroup)")
 
 
 _, row3, _ = st.columns((.1, 3.2, .1))
 with row3:
-  st.subheader("Which aspect of the beer influences the overall rating of the beer the most?")
+  st.subheader("The portrait of the beers that are most popular among people")
   plot_html('./figure/hist.html')
-
+  st.write(placehold)
 
 _, row4, _ = st.columns((.1, 3.2, .1))
-with row2:
+with row4:
   st.subheader("What is the relation between descriptive reviews and Overall scores?")
+  st.write(placehold)
 
 
 _, row5, _ = st.columns((.1, 3.2, .1))
 with row5:
   st.subheader("What is the shift in people's preference for beer style over some time? How do we use the trend to give some brewing advice to Brewery?")
-
-
+  st.write(placehold)
