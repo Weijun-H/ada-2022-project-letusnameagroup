@@ -1,8 +1,3 @@
-from IPython.display import HTML, Javascript, display
-from ipywidgets import interact
-import statsmodels.formula.api as smf
-import statsmodels.api as sm
-from statsmodels.stats import diagnostic
 from scipy import stats
 import streamlit as st
 import numpy as np
@@ -12,8 +7,6 @@ import time
 from matplotlib.ticker import FuncFormatter
 
 from PIL import Image
-
-
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -25,8 +18,8 @@ with open('placehold.txt') as f:
 
 sns.set_style("darkgrid")
 
-
 st.set_page_config(layout="wide")
+
 
 ### Data Import ###
 
@@ -41,14 +34,13 @@ st.set_page_config(layout="wide")
 ### Helper Methods ###
 
 
-
 ###############################
 ### ANALYSIS METHODS (PLOT) ###
 ###############################
-def plot_html(filename):
-  with open(filename, 'r') as f:
-      html_data = f.read()
-  st.components.v1.html(html_data,height=450, scrolling = True)
+def plot_html(filename, height):
+    with open(filename, 'r') as f:
+        html_data = f.read()
+    st.components.v1.html(html_data, scrolling=True, height=height)
 
 
 ###################
@@ -66,29 +58,40 @@ st.image(image)
 row0_spacer1, row0_1, row0_spacer2, row0_2, row0_spacer3 = st.columns((.1, 2.3, .1, 1.3, .1))
 
 with row0_1:
-  st.title("Let us make the most popular beer🍺!")
+    st.title("Let us make the most popular beer🍺!")
 
 _, row2, _ = st.columns((.1, 3.2, .1))
 with row2:
-  st.subheader("Introduction")
-  st.markdown("Over the 20 years, beer rating websites have attracted plenty of users to give ratings and reviews about beers. As time passes, people may change their preference for beer. We intend to use the review and scores of different beers on BeerAdvocate and RateBeer websites. To determine which factors have the most significant influence on beer's overall rating. And give production or sales suggestions to the breweries in the different regions. Due to the increasing number of negative reviews and water army, the consumer would easily be affected by these grading. We would like to know if this phenomenon also happened in our dataset. Because negative reviews are generally random text, we intend to train the model using reviews as input and ratings as labels. Thus detecting malicious reviews and eliminating this affection.")
-  st.markdown(
-      "You can find the source code in the [Let us make the most popular beer!](https://github.com/epfl-ada/ada-2022-project-letusnameagroup)")
+    st.subheader("Introduction")
+    st.markdown(
+        "Over the 20 years, beer rating websites have attracted plenty of users to give ratings and reviews about "
+        "beers. As time passes, people may change their preference for beer. We intend to use the review and scores "
+        "of different beers on BeerAdvocate and RateBeer websites. To determine which factors have the most "
+        "significant influence on beer's overall rating. And give production or sales suggestions to the breweries in "
+        "the different regions. Due to the increasing number of negative reviews and water army, the consumer would "
+        "easily be affected by these grading. We would like to know if this phenomenon also happened in our dataset. "
+        "Because negative reviews are generally random text, we intend to train the model using reviews as input and "
+        "ratings as labels. Thus detecting malicious reviews and eliminating this affection.")
+    st.markdown(
+        "You can find the source code in the [Let us make the most popular beer!]("
+        "https://github.com/epfl-ada/ada-2022-project-letusnameagroup)")
 
+    st.subheader("Do you know what characteristics high point beers have?")
+    plot_html('./figure/hist.html', 450)
+    st.markdown("We analyze the beer ratings based on their ")
+    st.write(placehold)
 
-_, row3, _ = st.columns((.1, 3.2, .1))
-with row3:
-  st.subheader("The portrait of the beers that are most popular among people")
-  plot_html('./figure/hist.html')
-  st.write(placehold)
+    st.subheader("Are popular beers really popular?")
+    st.image('./figure/test.png')
+    st.write(placehold)
+    # TODO: change sub figures to one bokeh figure
+    plot_html('figure/trend_in_region.html', 900)
+    st.write(placehold)
 
-_, row4, _ = st.columns((.1, 3.2, .1))
-with row4:
-  st.subheader("What is the relation between descriptive reviews and Overall scores?")
-  st.write(placehold)
+    st.subheader("Do you practice what you preach when you review beer?")
+    st.markdown("Our team based on the reviews on BeerAdvocate to analyze the quality of the reviews.")
+    st.image(['./figure/adj_words.png', './figure/adj_words.png'])
+    st.write(placehold)
 
-
-_, row5, _ = st.columns((.1, 3.2, .1))
-with row5:
-  st.subheader("What is the shift in people's preference for beer style over some time? How do we use the trend to give some brewing advice to Brewery?")
-  st.write(placehold)
+    st.subheader("Let us suggest a wine for you!")
+    st.write(placehold)
